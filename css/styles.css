@@ -1,6 +1,6 @@
 /*Google fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 /*Variables*/
 :root
 {
@@ -16,6 +16,7 @@
 
     /*Font and typo*/
     --body-font: 'Poppins', sans-serif;
+    --womp-font: 'Fredoka One', cursive;
     --biggest-font-size: 2.25rem;
     --h1-font-size: 1.5rem;
     --h2-font-size: 1.25rem;
@@ -454,6 +455,29 @@ img{
     margin-top: 3.5rem;
 }
 
+.womp__logo{
+    align-items: center;
+    font-size: var(--small-font-size);
+    color: var(--text-color-light);
+}
+
+.womp__name{
+    font-family: var(--womp-font);
+    font-size: var(--small-font-size);
+    color: #1c1c1c;
+}
+
+.womp__point{
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    color: #892CDC;
+}
+
+.womp__container{
+    display: flex;
+    justify-content: center;
+}
 /*MEDIA QUERIES*/
 @media screen and (min-width: 576px) {
     .home__container,
