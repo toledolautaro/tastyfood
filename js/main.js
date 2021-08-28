@@ -56,7 +56,7 @@ function scroolHeader()
         nav.classList.remove('scroll-header')
     }
 }
-window.addEventListener('scroll', scroolHeader)
+window.addEventListener('scroll', scroolHeader);
 
 /*==================== SHOW SCROLL TOP ====================*/ 
 function scrollTop(){
@@ -65,3 +65,20 @@ function scrollTop(){
     if(this.scrollY >= 560) scrollTop.classList.add('show-scroll'); else scrollTop.classList.remove('show-scroll')
 }
 window.addEventListener('scroll', scrollTop)
+
+/*==================== SCROLL REVEAL ANIMATION ====================*/
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '30px',
+    duration: 2000,
+    reset: true
+});
+
+sr.reveal(`.home__data, .home__img,
+            .about__data, .about__img,
+            .services__content, .menu__content,
+            .app__data, .app__img,
+            .contact__data, .contact__button,
+            .footer__content`, {
+    interval: 200
+})
